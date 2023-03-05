@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <table border="0" align="center" cellpadding="10" width="30%">
+            <thead>
+                <tr bgcolor="pink">
+                    <th colspan="2">Latihan membuat Form</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>
+                        <input type="submit">
+                    </th>
+                </tr>
+
+            </tfoot>
+            <tbody>
+                <tr>
+                <td>
+                    <label>Nama</label>
+                </td>
+                <td>
+                    <Input type="text" name="Nama" value="" placeholder="Silahkan masukkan nama" size="50" widht="100">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Label>email</Label>
+                    </td>
+                    <td>
+                        <input type="Email" value="" placeholder="Masukkan Email">
+                        <!-- Placeholder untuk nama didalam kolom yang akan diisi-->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="L" checked> Laki-laki &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="P" checked> Perempuan &nbsp;&nbsp;
+                        <!-- &nbsp untuk spasi jarak, spasi biasa gak terbaca di html-->
+                        <!-- type radio hanya bisa memilih 1 pilihan saja-->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Hobby</label></td>
+                    <td>
+                        <input type="checkbox" name="Hobby" value="Menulis">Menulis <br>
+                        <input type="checkbox" name="Hobby" value="Menyanyi">Menyanyi <br>
+                        <input type="checkbox" name="Hobby" value="Membaca">Membaca <br>
+                        <input type="checkbox" name="Hobby" value="Traveling">Traveling <br>
+                        <!--Checkbox boleh memilih lebih dari 1 pilihan-->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Pendidikan</label></td>
+                    <td>
+                        <select name="Pendidikan">
+                            <option>----Pilih pendidikan----</option>
+                            <option value="">SMA</option>
+                            <option value="">D1</option>
+                            <option value="">D3</option>
+                            <option value="">S1</option>
+                            <!-- Select & option pilihannya list-->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Alamat</label></td>
+                    <td>
+                        <textarea name="Alamat" cols="50" rows="5" placeholder="Tuliskan alamat disini!"></textarea>
+                        <!-- textarea untuk membatasi jumlah baris, kolom dan karakter yang bisa di masukkan-->
+                        <!-- cols kesamping, rows kebawah-->
+                        <!-- textarea box nya bisa diperbesar pakai cursor tp kalau di refresh, ukuran nya akan balik lagi seperti 
+                        yang diatur di codingan-->
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
