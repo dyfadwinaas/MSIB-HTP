@@ -1,0 +1,42 @@
+<script>
+    let pegawai = "Dyfa Dwina Sahrani";
+    let jabatan = "Manager";
+    let status = "Menikah";
+
+
+    let gaji = 0;
+    switch (jabatan) {
+        case 'Manager':
+            gaji = 10000000;
+            break;
+        case 'Asisten Manager':
+            gaji = 8000000;
+            break;
+        case 'Staff':
+            gaji = 5000000;
+            break;
+    }
+    let tunmen = 0;
+    switch (status) {
+        case 'Menikah':
+            tunmen = 0.1 * gaji
+            break;
+        case 'Belum menikah':
+            tunmen = 0;
+            break;
+    }
+
+    let tunjab = 0.1 * gaji;
+    let bpjs = 0.1 * gaji;
+    let totalgj = gaji + tunjab + bpjs + tunmen;
+
+    document.write("Data pegawai atas nama " + pegawai +
+        "<br> Jabatan : " + jabatan +
+        "<br> status : " + status +
+        "<br> gaji pokok : " + gaji +
+        "<br> Tunjangan Jabatan : " + tunjab +
+        "<br> Tunjangan kesehatan BPJS : " + bpjs +
+        "<br> Tujangan keluarga : " + tunmen +
+        "<br> Total gaji : " + totalgj
+    );
+</script>
