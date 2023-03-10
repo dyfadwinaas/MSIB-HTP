@@ -1,0 +1,45 @@
+<script>
+    //Pelanggan membeli bara elektronik dengan harga:
+    // TV -> 3 juta, Mesin cuci -> 5 juta, airfryer -> 2 juta
+    //tentukan pembelian barangnya apa dan berapa yang dibeli 
+
+    let pelanggan = "Dyfa";
+    let produk = "TV";
+
+    let harga = 0;
+    switch (produk) {
+        case 'TV':
+            harga = 3000000;
+            break;
+        case 'Mesin Cuci':
+            harga = 5000000;
+            break;
+        case 'AirFryer':
+            harga = 2000000;
+            break;
+    }
+    let JmlhBeli = 4;
+    let total = harga * JmlhBeli;
+    let ppn = total * 0.11;
+
+
+    // membuat diskon untuk 3 produk
+
+    let diskon = 0;
+    if (produk == 'TV') diskon = 0.03 * total;
+    else if (produk == 'Mesin Cuci') diskon = 0.02 * total;
+    else diskon = 0.06 * total;
+
+    let totaldsk = total - diskon;
+
+    document.write("Data Pembelian " +
+        "Pelanggan atas nama " + pelanggan +
+        "<br> produk : " + produk +
+        "<br> kuantitas pembelian : " + JmlhBeli +
+        "<br> Harga satuan : " + harga +
+        "<br> Total harga : " + total +
+        "<br> Harga diskon : " + diskon +
+        "<br> Harga setelah diskon = " + totaldsk +
+        "<br> PPN : " + ppn
+    );
+</script>
