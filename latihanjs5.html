@@ -10,5 +10,65 @@
     else if (nilai > 50 && nilai <= 60) grade = "E";
     else grade = "";
 
-    document.write("Siswa bernama " + siswa + " <br>dengan nilai " + nilai + " <br>Grade " + grade);
+    //switch case mengubah satu kondisi ke kondisi lain
+
+    switch (grade) {
+        case "A":
+            predikat = "Memuaskan";
+            break;
+        case "B":
+            predikat = "Baik";
+            break;
+        case "C":
+            predikat = "Cukup";
+            break;
+        case "D":
+            predikat = "Kurang baik";
+            break;
+        case "E":
+            predikat = "Sangat kurang baik";
+            break;
+    }
+
+    document.write("Siswa bernama " + siswa + " <br>dengan nilai " + nilai + " <br>Grade " + grade +
+        " <br>dengan predikat : " + predikat);
+
+
+    //LATIHAN STUDI KASUS (yang diatas latihan IF)
+
+    //Pelanggan membeli bara elektronik dengan harga:
+    // TV -> 3 juta, Mesin cuci -> 5 juta, airfryer -> 2 juta
+    //tentukan pembelian barangnya apa dan berapa yang dibeli 
+
+    //let pelanggan = "Dyfa";
+    //let produk = "TV";
+
+    //struktur kendali 
+    //if (produk == 'TV') {
+    //    harga = 3000000;
+    //} else if (produk == 'Mesin Cuci') {
+    //    harga = 5000000;
+    //} else if (produk == 'AirFryer') {
+    //    harga = 2000000;
+    //} else {
+    //    harga = 0;
+    //}
+    //let JmlhBeli = 3;
+    //let total = harga * JmlhBeli;
+
+    //jika pembelian TV maka akan dapat diskon
+
+    //if(produk == 'TV') diskon = 0.1 * total;
+    //else diskon = 0;
+
+    //let diskon = (produk == 'TV') ? 0.1 * total : 0;
+    //let harga_diskon = total - diskon;
+
+    //document.write("Data Pembelian " +
+    //   " <br> Pelanggan atas nama " + pelanggan +
+    //   " <br> Produk yang dibeli = " + produk +
+    //   " <br> Harga satuan = " + harga +
+    //   " <br> Kuantitas pembelian = " + JmlhBeli +
+    //   " <br> Total harga = " + total +
+    //   "<br> Harga sesudah diskon = " + harga_diskon)
 </script>
