@@ -1,0 +1,105 @@
+<script>
+    //atau array didalam array (array of object)
+    let p1 = {
+        nama: "Dyfa",
+        nilai: 100
+    };
+    let p2 = {
+        nama: "Dwina",
+        nilai: 56
+    };
+    let p3 = {
+        nama: "Sahrani",
+        nilai: 100
+    };
+    let p4 = {
+        nama: "Panjaitan",
+        nilai: 55
+    };
+    let p5 = {
+        nama: "Syaa",
+        nilai: 100
+    };
+
+    let person = [p1, p2, p3, p4, p5];
+
+    //Set grade A - E (menggunakan if multi kondisi)
+    //A = 90 - 100, B 80 - 89 dan seterusnya sampai E
+    function Grade(nilai) {
+        if (nilai >= 90)
+            return "A";
+        else if (nilai >= 80)
+            return "B";
+        else if (nilai >= 70)
+            return "C";
+        else if (nilai >= 60)
+            return "D";
+        else
+            return "E";
+    }
+
+    //set predikat (menggunakan switch case)
+    function Predikat(grade) {
+        switch (grade) {
+            case "A":
+                return "Sangat baik";
+                break;
+            case "B":
+                return "Baik";
+                break;
+            case "C":
+                return "Cukup";
+                break;
+            case "D":
+                return "Kurang";
+                break;
+            default:
+                return "Sangat kurang";
+                break;
+        }
+    }
+
+    //set warna warni table menggunakan looping
+    function Warna(ket) {
+        if (ket == "Lulus") {
+            return "yellow";
+        } else {
+            return "greenblue";
+        }
+    }
+
+    document.write(`<table style="text-align: center; width: 100%;">
+              <thead>
+                  <tr>
+                      <th>No</th>
+                      <th>Nama</th>
+                      <th>Nilai</th>
+                      <th>Grade</th>
+                      <th>Predikat</th>
+                      <th>Keterangan</th>
+                  </tr>
+              </thead>
+              <tbody>`);
+
+
+    for (let i = 0; i < person.length; i++) {
+        let p = person[i];
+
+        let grade = Grade(p.nilai);
+        let predikat = Predikat(p.grade);
+        let ket = p.nilai >= 60 ? "Lulus" : "Tidak Lulus";
+        let warna = Warna(ket);
+        document.write(`
+                  <tr bgcolor="${warna}">
+                      <td>${i + 1}</td>
+                      <td>${p.nama}</td>
+                      <td>${p.nilai}</td>
+                      <td>${grade}</td>
+                      <td>${predikat}</td>
+                      <td>${ket}</td>
+                  </tr>
+              `);
+    }
+    document.write(`</tbody>
+          </table>`);
+</script>
