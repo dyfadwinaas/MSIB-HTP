@@ -1,0 +1,59 @@
+<script>
+    //jika tidak menggunakan looping
+
+    document.write('Bilangan 1' + '<br> Bilangan 2' + '<br> Bilangan 3');
+    document.write('<hr> Cetak bilangan 1 sampai 50');
+
+    //contoh perulangan menggunakan for menggunakan operator increment
+    var angka;
+    for (angka = 1; angka <= 50; angka++) {
+        document.write('<br> Bilangan ' + angka);
+    }
+
+    //contoh perulangan menggunakan decrement
+    document.write('<hr>');
+    var bil;
+    for (bil = 50; bil >= 1; bil--) {
+        document.write('<br>' + bil);
+    }
+    //mencetak bilangan ganjil
+    //menggunakan modulus(sisa bagi)
+    document.write('<hr> mencetak bilangan ganjil');
+    let ganjil;
+    for (ganjil = 1; ganjil <= 20; ganjil++) {
+        if (ganjil % 2 == 1) {
+            document.write('<br> bilangan ganjil : ' + ganjil);
+        }
+    }
+    let ganjill;
+    for (ganjill = 1; ganjill <= 20; ganjill += 2) {
+        document.write('<hr><br> Coba bilangan ' + ganjill)
+    }
+
+    //perulangan menggunakan while
+    document.write("<hr><br>----------Cetak angka 1 sampai 10----------");
+    let angka2 = 1;
+    //angka 1 ini nantinya di 
+    while (angka2 <= 30) {
+        document.write("<br> cetak bilangan " + angka2);
+        angka2++;
+    }
+
+    //membuat bilangan prima
+    document.write('<hr> Membuat bilangan prima');
+
+    var i;
+    var y;
+
+    for (i = 1; i <= 30; i++) {
+        var prim = 0;
+        for (y = 1; y <= i; y++) {
+            if (i % y == 0) {
+                prim++;
+            }
+        }
+        if (prim == 2) {
+            document.write('<br> Bilangan prima : ' + i)
+        }
+    }
+</script>
