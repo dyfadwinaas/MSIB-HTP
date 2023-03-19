@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <table border="0" cellpadding="10" width="100%" align="left">
+        <form id="kalkulator">
+            <tr>
+                <td style="padding: 5%; font-size:200%; text-align: center; background-color:rosybrown; font-weight: bolder;"> Kalkulator</td>
+            </tr>
+
+            <tr>
+                <td bgcolor="wheat">Angka 1</td>
+            </tr>
+
+            <tr>
+                <td bgcolor="white"><input style="width: 50%; padding: 2%; font-size: 80%;" type="number" name="angka" placeholder="masukkan angka pertama"></td>
+            </tr>
+            <tr>
+                <td bgcolor="wheat">Angka 2</td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><input style="width: 50%; padding: 2%; font-size: 80%;" type="number" name="angka2" placeholder="masukkan angka kedua"></td>
+            </tr>
+            <tr>
+                <td bgcolor="wheat">Hasil</td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><input style="width: 50%; padding: 2%; font-size: 100%;" type="number" name="hasil" value="" disabled></td>
+            </tr>
+        </form>
+    </table><br>
+    <br align="left">
+    <button style="background-color:darkkhaki; padding: 5%;" type="button" name="tambah" onclick="tambah()">+</button>
+    <button style="background-color: darkkhaki; padding: 5%;" type="button" name="kurang" onclick="kurang()">-</button>
+    <button style="background-color:darkkhaki; padding: 5%;" type="button" name="bagi" onclick="bagi()">/</button>
+    <button style="background-color: darkkhaki; padding: 5%;" type="button" name="Kali" onclick="kali()">*</button>
+    <button style="background-color: darkkhaki; padding: 5%;" type="button" name="pangkat" onclick="pangkat()">^</button>
+    </br>
+
+    <script src="script/kalkulator.js">
+    </script>
+</body>
+
+</html>
