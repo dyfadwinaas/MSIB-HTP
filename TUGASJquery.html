@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 6 Pemanggilan foto</title>
+    <script src="script/jquery-3.6.4.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // pembuatan jquery dengan pemanggilan selector tag
+            $("picture").click(function() {
+                alert("tampil gambar kucing");
+            });
+            // pembuatan jquery dengan pemanggilan id
+            $("#panggil_id").css("color", "white");
+
+            $(".panggil_class").css("color", "black");
+
+            //menggunakan efek
+            $("p").hide("2000");
+            $("p").slideDown(300);
+
+        });
+    </script>
+</head>
+
+<thead>
+    <h1 style="text-align: center;" id="panggil_id">Tugas jquery gambar</h3>
+        <h3 style="text-align: center;" class="panggil_class">Dyfa Dwina Sahrani</h1>
+</thead>
+
+<body style="background-color: cadetblue;">
+    <img style="width: 60%;" src="foto1/kucing 1.jpg" class="gambar 1">
+    <img style="width: 60%;" src="foto1/kucingg.jpg" class="gambar 2">
+    <img style="width: 60%;" src="foto1/kucingz.jpg" class="gambar 1">
+
+
+    <p>ini foto kucing lucu</p>
+    <input type="submit" value="picture" />
+
+</body>
+
+</html>
